@@ -29,8 +29,7 @@ unsigned long long int multiplyMatrices(float *a, float *b, float *c, unsigned i
 	return num_ops;
 } // end multiplyMatrices
 
-inline double calculate_relative_seconds(struct timeval t1, struct timeval t2)
-{
+inline double calculate_relative_seconds(struct timeval t1, struct timeval t2) {
     return ((t2.tv_sec - t1.tv_sec) * 1.0) + ((t2.tv_usec - t1.tv_usec) / 1e6);
 }
 
